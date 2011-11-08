@@ -1,0 +1,22 @@
+{% if visit.private %}
+<p class="notification">This visit is marked as private and is therefore only viewable by counseling staff</p>
+{% endif %}
+<h3>Details</h3>
+<dl id="visit-details">
+  <dt>Campus:</dt>
+  <dd>{{ visit.get_campus_display }}</dd>
+  <dt>Contact Type:</dt>
+  <dd>{{ visit.get_contact_type_display }}</dd>
+  <dt>Department:</dt>
+  <dd>{{ visit.get_department_display }}</dd>
+  <dt>Reason for Visit:</dt>
+  <dd>{{ visit.get_reason_display }}</dd>
+  <dt>Undecided Financial Aid:</dt>
+  <dd>{{ visit.undecided_financial_aid }}</dd>
+  <dt>Career Services Outcome:</dt>
+  <dd>{{ visit.get_career_services_outcome_display }}</dd>
+</dl>
+<div class="clear"></div>
+<h3>Notes</h3>
+<p>{{ visit.note|linebreaks }}</p>
+<p><em>Submitted by {{ visit.submitter.get_full_name }} on {{ visit.date_submitted|date:"F j, Y" }}</em></p>

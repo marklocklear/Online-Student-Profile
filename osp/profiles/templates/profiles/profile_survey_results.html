@@ -1,0 +1,14 @@
+{% if student.result_set.all %}
+<div class="clear"></div>
+<div class="large-tile">
+  <ul>
+    {% for result in student.result_set.all %}
+    <li>{{ result.date_taken|date:"F j, Y" }} <a href="javascript:;" class="modal" ref="survey-window" data-result-id="{{ result.id }}">view details</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% else %}
+<div class="clear"></div>
+<p><em>Student has not completed any surveys</em></p>
+{% endif %}
+<div id="survey-window"></div>

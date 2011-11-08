@@ -1,0 +1,194 @@
+[
+    {
+        "type": "ISFJ",
+        "statement": "You enjoy quietly providing loyal personal service to others, staying out of the spotlight yourself."
+    },
+    {
+        "type": "ISFJ",
+        "statement": "You prefer to support and encourage others rather than to lead."
+    },
+    {
+        "type": "ISFJ",
+        "statement": "You show an unusual ability to be loyal and forgiving toward persons who mistreat you."
+    },
+    {
+        "type": "ISFP",
+        "statement": "You enjoy being unpredictable and doing things without planning ahead."
+    },
+    {
+        "type": "ISFP",
+        "statement": "You believe that anything is possible, and don't like to rule out solutions that others say have no real possibility of success."
+    },
+    {
+        "type": "ISFP",
+        "statement": "You have your own strong sense of taste, art, and/or style."
+    },
+    {
+        "type": "ISTJ",
+        "statement": "You do not mind doing the same kinds of work over and over again."
+    },
+    {
+        "type": "ISTJ",
+        "statement": "You have strong opinions about the way things should be, but usually do not express them unless asked."
+    },
+    {
+        "type": "ISTJ",
+        "statement": "You like following set routines in most aspects of your life and rarely do things that are out of your ordinary habits."
+    },
+    {
+        "type": "ISTP",
+        "statement": "You really understand the way machines or processes work, and how to fix them when they don't."
+    },
+    {
+        "type": "ISTP",
+        "statement": "You often see problems or errors in theories or untested plans and are able to explain them to others (you can tell them what will not work and why)."
+    },
+    {
+        "type": "ISTP",
+        "statement": "You sometimes choose to behave according to your own rules just because you \"feel like it.\""
+    },
+    {
+        "type": "ESFJ",
+        "statement": "You often tell people how they should behave toward other people."
+    },
+    {
+        "type": "ESFJ",
+        "statement": "You sometimes have trouble deciding whether to make people take responsibility for their actions or to save them from their actions."
+    },
+    {
+        "type": "ESFJ",
+        "statement": "You easily express your emotions."
+    },
+    {
+        "type": "ESFP",
+        "statement": "You like practically anything that is NEW."
+    },
+    {
+        "type": "ESFP",
+        "statement": "You can usually make almost anything FUN."
+    },
+    {
+        "type": "ESFP",
+        "statement": "Other people say you talk non-stop."
+    },
+    {
+        "type": "ESTJ",
+        "statement": "When giving advice or instructions to others, you usually tell them that it is very important that they be fully committed to whatever it is you are helping them with."
+    },
+    {
+        "type": "ESTJ",
+        "statement": "You like to do things the way that they have always been done because those ways have been proven to work."
+    },
+    {
+        "type": "ESTJ",
+        "statement": "You readily learn and actively enforce the rules and do not like to break the rules."
+    },
+    {
+        "type": "ESTP",
+        "statement": "You enjoy saying and doing things to shock or surprise others."
+    },
+    {
+        "type": "ESTP",
+        "statement": "You like to fool others by \"playing dumb\" (pretending to not understand things when you really do understand them)."
+    },
+    {
+        "type": "ESTP",
+        "statement": "You are comfortable giving and answering high-risk challenges."
+    },
+    {
+        "type": "INFJ",
+        "statement": "You actively work to improve society to help people who are helpless or in crisis."
+    },
+    {
+        "type": "INFJ",
+        "statement": "It's easy for you to figure out the motives and private problems of other people."
+    },
+    {
+        "type": "INFJ",
+        "statement": "You really don't like public recognition for things you do, and may shift the praise to others."
+    },
+    {
+        "type": "INFP",
+        "statement": "You believe that most people are good, by nature."
+    },
+    {
+        "type": "INFP",
+        "statement": "You have an active imagination, often seeing human characteristics in toys or other objects."
+    },
+    {
+        "type": "INFP",
+        "statement": "You choose to believe in the good in the world and try to understand why people might do bad things."
+    },
+    {
+        "type": "INTJ",
+        "statement": "You are skilled at developing new systems or making existing systems work better."
+    },
+    {
+        "type": "INTJ",
+        "statement": "You have the confidence to start a project with little or no input from others."
+    },
+    {
+        "type": "INTJ",
+        "statement": "You easily move away from the \"way things have always been done\" in pursuing tasks or personal interests."
+    },
+    {
+        "type": "INTP",
+        "statement": "You often do things with the purpose of making yourself smarter."
+    },
+    {
+        "type": "INTP",
+        "statement": "You naturally analyze things, trying to find out WHY things are as they are."
+    },
+    {
+        "type": "INTP",
+        "statement": "You are able to lose yourself in thought, often being unaware of objects and activities in your surroundings."
+    },
+    {
+        "type": "ENFJ",
+        "statement": "Many people regard you as their best friend  (You speak of even people you haven't known very long as being \"good friends.\")"
+    },
+    {
+        "type": "ENFJ",
+        "statement": "You are comfortable being the person who holds a group together."
+    },
+    {
+        "type": "ENFJ",
+        "statement": "People often go to you for advice and support."
+    },
+    {
+        "type": "ENFP",
+        "statement": "You do impressions of other people for fun - acting like other people to entertain friends."
+    },
+    {
+        "type": "ENFP",
+        "statement": "You show warmth/emotions/affect but usually through your actions rather than words."
+    },
+    {
+        "type": "ENFP",
+        "statement": "People might say that you \"have never met a stranger\" or that you are comfortable talking with people you have just met."
+    },
+    {
+        "type": "ENTJ",
+        "statement": "You have your own set of principles or values which you are able to defend with any number of convincing logical arguments."
+    },
+    {
+        "type": "ENTJ",
+        "statement": "You often have better ideas for doing things that others may have already planned, and might even enjoy talking others into doing it your way."
+    },
+    {
+        "type": "ENTJ",
+        "statement": "You don't mind telling other people they are wrong, especially when they disagree with you."
+    },
+    {
+        "type": "ENTP",
+        "statement": "You enjoy creatively making up things with words/thoughts/ideas."
+    },
+    {
+        "type": "ENTP",
+        "statement": "You enjoy creating \"masterpieces\" (inventions, concepts, techniques that previously did not exist)."
+    },
+    {
+        "type": "ENTP",
+        "statement": "You really are a unique person, one-of-a-kind."
+    }
+]

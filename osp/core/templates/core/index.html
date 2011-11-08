@@ -1,0 +1,32 @@
+{% extends base_template %}
+
+{% block body %}
+<h2>Overview</h2>
+<p>Online Student Profile is an early warning system designed to improve retention rates among high-risk students in higher education institutions. It includes many different features for students, instructors, and counselors, including:</p>
+<ul>
+  <li>
+    <strong>Students</strong>
+    <ul>
+      <li>Complete Personality Type and Learning Style assessments</li>
+      <li>Complete surveys</li>
+      <li>View Personality Type and Learning Style assessment results</li>
+      <li>View survey results</li>
+      <li>View current enrollments</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Instructors and Counselors</strong>
+    <ul>
+      <li>View a student's current enrollments</li>
+      <li>View a student's Personality Type and Learning Style assessment results</li>
+      <li>View a student's survey results</li>
+      <li>Log visits with a student</li>
+      <li>View a student's previous visits with instructors and counselors</li>
+      <li>View full rosters for all courses taught in the current term (instructors only)</li>
+      <li>Quickly and easily submit interventions on a student's behalf (instructors only)</li>
+      <li>Quickly and easily contact students via email (instructors only)</li>
+    </ul>
+  </li>
+</ul>
+<p>For help performing specific actions within OSP, please visit the <a href="{% url core:help %}">help page</a>.</p>
+{% endblock %}

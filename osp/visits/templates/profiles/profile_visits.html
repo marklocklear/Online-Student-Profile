@@ -1,0 +1,12 @@
+<a href="javascript:;" id="log-visit" class="float-right">log a visit</a>
+<div class="clear"></div>
+<div id="visits" style="min-height: 225px;">
+  {% if visits %}
+  {% include "visits/view_all.html" %}
+  {% else %}
+  <div class="clear"></div>
+  <p><em>Student has no logged visits</em></p>
+  {% endif %}
+</div>
+<div id="view-visit-window"></div>
+<div id="log-visit-window"></div>

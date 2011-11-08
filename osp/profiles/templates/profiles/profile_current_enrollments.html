@@ -1,0 +1,22 @@
+{% if current_enrollments %}
+<table>
+  <thead>
+    <tr>
+      <th>Course</th>
+      <th>Title</th>
+      <th>Credit Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for enrollment in current_enrollments %}
+    <tr class="{% cycle "odd" "even" %}">
+      <td style="width: 25%;">{{ enrollment.section.prefix }}{{ enrollment.section.number }}-{{ enrollment.section.section }}</td>
+      <td style="width: 50%;">{{ enrollment.section.title }}</td>
+      <td style="width: 25%;">{{ enrollment.section.credit_hours }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p><em>Student is not currently enrolled in any courses</em></p>
+{% endif %}

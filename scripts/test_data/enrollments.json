@@ -1,0 +1,38 @@
+[
+    {
+        "prefix": "ENG",
+        "number": "101",
+        "section": "01",
+        "term": "su",
+        "year": 2011,
+        "student": "0000004",
+        "status": "N"
+    },
+    {
+        "prefix": "MAT",
+        "number": "101",
+        "section": "01",
+        "term": "su",
+        "year": 2011,
+        "student": "0000004",
+        "status": "N"
+    },
+    {
+        "prefix": "ENG",
+        "number": "101",
+        "section": "01",
+        "term": "su",
+        "year": 2011,
+        "student": "0000005",
+        "status": "N"
+    },
+    {
+        "prefix": "CIS",
+        "number": "101",
+        "section": "01",
+        "term": "su",
+        "year": 2011,
+        "student": "0000006",
+        "status": "N"
+    }
+]

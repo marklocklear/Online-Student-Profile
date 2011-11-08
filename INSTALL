@@ -1,0 +1,19 @@
+1. Download the source tarball
+
+   $ wget http://osp.googlecode.com/files/OSP-1.0.tar.gz
+
+
+2. Extract the contents
+
+   $ tar xvzf OSP-1.0.tar.gz
+
+
+2. Run the setup script
+
+   $ cd osp
+   $ ./scripts/setup.sh
+
+
+For far more detailed installation documentation, including an
+explanation of each step in the setup script, visit
+http://code.google.com/p/osp/wiki/Installation.

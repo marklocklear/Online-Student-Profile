@@ -1,0 +1,16 @@
+{
+    "type": "ISTP",
+    "long_name": "Introverted Sensing Thinking Perceiving",
+    "description": "<p>ISTPs like to work hard, but they prefer mechanical type tasks instead of artistic ones. They tend to be territorial, meaning they like to work within their own space and take ownership of it. They don’t express themselves a lot with words, but when they do, they often give one-liners, quick come backs that are often taken as offensive by those around them.</p><p>ISTPs sometimes do not excel in the regular classroom. Some teachers may misunderstand their actual level of intelligence because they miss that the ISTP is really good at analytical and hands-on type tasks. They tend to do better in classes like the industrial arts and part-time vocational/ technical programs. In terms of careers, mechanics and any of the skilled trades are traditional choices, and those ISTPs who are good with numbers and analytical work tend to do extremely well in most areas of engineering. Working as paramedics or firefighters can fulfill the ISTP need to live on the edge. ISTPs with not so exciting careers usually take on high-risk hobbies and sports like racing, skydiving, and motorcycling to help fulfill that need to be on the edge.</p>",    
+    "careers": [
+        "Police and Detective Work",
+        "Forensic Pathologists",
+        "Computer Programmers, System Analysts and Computer Specialists",
+        "Engineers",
+        "Carpenters",
+        "Mechanics",
+        "Pilots, Drivers, Motorcyclists",
+        "Athletes",
+        "Entrepreneurs"
+    ]
+}

@@ -1,0 +1,41 @@
+{% if form.errors %}
+<p class="error">Your form submission contains errors. Please correct the highlighted fields.</p>
+{% endif %}
+<form id="visit-form" class="ui-form" action="{% url visit:log student.id %}" method="POST">
+  {% csrf_token %}
+  <h3>Details</h3>
+  <div class="field{% if form.campus.errors %} field-error{% endif %}">
+    {{ form.campus.label_tag }}
+    {{ form.campus }}
+  </div>
+  <div class="field{% if form.contact_type.errors %} field-error{% endif %}">
+    {{ form.contact_type.label_tag }}
+    {{ form.contact_type }}
+  </div>
+  <div class="field{% if form.department.errors %} field-error{% endif %}">
+    {{ form.department.label_tag }}
+    {{ form.department }}
+  </div>
+  <div class="field{% if form.reason.errors %} field-error{% endif %}">
+    {{ form.reason.label_tag }}
+    {{ form.reason }}
+  </div>
+  <div class="field checkbox{% if form.undecided_financial_aid.errors %} field-error{% endif %}">
+    {{ form.undecided_financial_aid }}
+    {{ form.undecided_financial_aid.label_tag }}
+  </div>
+  <div class="field{% if form.career_services_outcome.errors %} field-error{% endif %}">
+    {{ form.career_services_outcome.label_tag }}
+    {{ form.career_services_outcome }}
+  </div>
+  <h3>Notes</h3>
+  <div class="field{% if form.note.errors %} field-error{% endif %}">
+    {{ form.note }}
+  </div>
+  {% if can_privatize %}
+  <div class="field checkbox{% if form.private.errors %} field-error{% endif %}">
+    {{ form.private }}
+    {{ form.private.label_tag }}
+  </div>
+  {% endif %}
+</form>

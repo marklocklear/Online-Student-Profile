@@ -1,0 +1,10 @@
+{% extends base_template %}
+
+{% block body %}
+<h1>Personality Type Assessment</h1>
+<form action="" method="POST" class="assessment">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" name="submit" id="id_submit" value="Submit" />
+</form>
+{% endblock %}

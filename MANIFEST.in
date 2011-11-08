@@ -1,0 +1,18 @@
+include README
+include AUTHORS
+include INSTALL
+include LICENSE
+include MANIFEST.in
+recursive-include osp/media *
+recursive-include osp/templates *
+recursive-include osp/assessments/data *
+recursive-include osp/assessments/templates *
+recursive-include osp/core/fixtures *
+recursive-include osp/core/templates *
+recursive-include osp/notifications/templates *
+recursive-include osp/profiles/templates *
+recursive-include osp/reports/templates *
+recursive-include osp/rosters/templates *
+recursive-include osp/surveys/data *
+recursive-include osp/surveys/templates *
+recursive-include osp/visits/templates *

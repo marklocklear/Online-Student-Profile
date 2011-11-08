@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Sign In</h1>
+{% if form.errors %}
+<p class="error">Your username and password did not match. Please try again.</p>
+{% endif %}
+<form action="{% url login %}" method="POST" class="ui-form">
+  {% csrf_token %}
+  <div class="field">
+    {{ form.username.label_tag }}
+    {{ form.username }}
+  </div>
+  <div class="field">
+    {{ form.password.label_tag }}
+    {{ form.password }}
+  </div>
+  <p><input type="submit" value="Sign In" /></p>
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+{% endblock %}

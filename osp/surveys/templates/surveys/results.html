@@ -1,0 +1,7 @@
+<h2>Survey Results ({{ result.date_taken|date:"m-d-Y" }})</h2>
+{% for answer in result.answer_set.all %}
+<div class="survey-answer {% cycle "odd" "even" %}">
+  <p class="question">{{ answer.question }}</p>
+  <p>{{ answer.answer }}</p>
+</div>
+{% endfor %}

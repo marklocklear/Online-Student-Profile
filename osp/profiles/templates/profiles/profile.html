@@ -1,0 +1,47 @@
+{% extends base_template %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript">
+var student_id = "{{ student.id }}";
+var latest_learning_style_result = {
+  'id': '{{ latest_learning_style_result.id }}',
+  'auditory_score': parseInt({{ latest_learning_style_result.auditory_score }}),
+  'kinesthetic_score': parseInt({{ latest_learning_style_result.kinesthetic_score }}),
+  'visual_score': parseInt({{ latest_learning_style_result.visual_score }})
+}
+var latest_personality_type_result_id = '{{ latest_personality_type_result.id }}';
+var personality_type_scores = [
+  ['{{ personality_type_scores.0.0 }}', parseFloat({{ personality_type_scores.0.1 }}), parseFloat({{ personality_type_scores.0.2 }})],
+  ['{{ personality_type_scores.1.0 }}', parseFloat({{ personality_type_scores.1.1 }}), parseFloat({{ personality_type_scores.1.2 }})],
+  ['{{ personality_type_scores.2.0 }}', parseFloat({{ personality_type_scores.2.1 }}), parseFloat({{ personality_type_scores.2.2 }})],
+  ['{{ personality_type_scores.3.0 }}', parseFloat({{ personality_type_scores.3.1 }}), parseFloat({{ personality_type_scores.3.2 }})]
+]
+</script>
+{% if latest_personality_type_result or latest_learning_style_result %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+{% endif %}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/profile.js"></script>
+{% endblock %}
+
+{% block body %}
+<h1>{{ student.get_full_name }}</h1>
+<h2>Current Enrollments</h2>
+{% include "profiles/profile_current_enrollments.html" %}
+<div id="learning-style">
+  <h2 class="float-left">Learning Style</h2>
+  {% include "profiles/profile_learning_style.html" %}
+</div>
+<div id="survey-results">
+  <h2 class="float-left">Survey Results</h2>
+  {% include "profiles/profile_survey_results.html" %}
+</div>
+<div class="clear"></div>
+<h2 class="float-left">Personality Type</h2>
+{% include "profiles/profile_personality_type.html" %}
+{% if can_view_visits %}
+<div class="clear"></div>
+<h2 class="float-left">Visits</h2>
+{% include "profiles/profile_visits.html" %}
+{% endif %}
+{% endblock %}

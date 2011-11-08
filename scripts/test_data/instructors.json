@@ -1,0 +1,32 @@
+[
+    {
+        "id_number": "0000001",
+        "username": "john.smith",
+        "first_name": "John",
+        "last_name": "Smith",
+        "email": "john.smith@example.edu",
+        "phone_number": "555-555-5555",
+        "last_four": "5555",
+        "is_active": true
+    },
+    {
+        "id_number": "0000002",
+        "username": "walter.raleigh",
+        "first_name": "Walter",
+        "last_name": "Raleigh",
+        "email": "walter.raleigh@example.edu",
+        "phone_number": "555-555-5555",
+        "last_four": "5555",
+        "is_active": true
+    },
+    {
+        "id_number": "0000003",
+        "username": "francis.drake",
+        "first_name": "Francis",
+        "last_name": "Drake",
+        "email": "francis.drake@example.edu",
+        "phone_number": "555-555-5555",
+        "last_four": "5555",
+        "is_active": true
+    }
+]

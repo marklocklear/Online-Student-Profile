@@ -1,0 +1,30 @@
+<p>Intervention is needed for the following students:</p>
+<ul>
+  {% for student in intervention.students.all %}
+  <li>
+    {{ student.last_name }}, {{ student.first_name }}
+    <br />
+    {% if student.email %}
+    <a href="mailto:{{ student.email }}">{{ student.email }}</a>
+    {% else %}
+    No email address
+    {% endif %}
+    <br />
+    {{ student.profile.phone_number|default:"No phone number" }}
+  </li>
+  {% endfor %}
+</ul>
+<p>Campus:</p>
+<p>{{ intervention.campus }}</p>
+<p>Reasons for intervention:</p>
+<ul>
+  {% for reason in reasons %}
+  <li>{{ reason }}</li>
+  {% endfor %}
+</ul>
+{% if intervention.comments %}
+<p>Comments from the instructor:</p>
+{{ intervention.comments|linebreaks }}
+{% endif %}
+<p>Thank you,</p>
+<p>{{ intervention.instructor.get_full_name }}</p>

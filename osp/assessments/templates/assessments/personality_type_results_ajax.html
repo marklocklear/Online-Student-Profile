@@ -1,0 +1,8 @@
+<h1>{{ description.long_name }}</h1>
+{{ description.description|safe }}
+<h2>Possible Career Paths for the {{ description.type }}:</h2>
+<ul>
+{% for person in description.careers %}
+  <li>{{ person }}</li>
+{% endfor %}
+</ul>

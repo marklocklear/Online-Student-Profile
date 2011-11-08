@@ -1,0 +1,122 @@
+[
+    {
+        "style": "kinesthetic",
+        "question": "Do you like to reach out and touch things when you are shopping?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you have to ask teachers to repeat instructions for you?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you follow spoken directions better than written directions?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you talk too fast and use you hands to communicate what you are saying?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you pay close attention to teacher's expressions on their face or their body language?"
+    },
+    {
+        "style": "auditory",
+        "question": "Would you prefer to listen to your teacher explain a lesson rather than to read it in a textbook?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Are you constantly moving things - tapping a pencil or jingling change in your pocket?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you remember things best by writing things down several times and by drawing pictures and diagrams?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you understand your lessons better when you read them aloud?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Are you good at playing sports?"
+    },
+    {
+        "style": "auditory",
+        "question": "Would you rather listen to the news on the radio than read it in the newspaper?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you turn the radio or TV up really loud?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you like to take things apart and put them back together?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you sing, hum or whistle a lot to yourself?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you understand lessons better if your teacher uses a flipchart, whiteboard or overhead projector?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you like to stand up while you are working reading or doing homework?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you dislike reading from a computer screen especially when the backgrounds are fuzzy?"
+    },
+    {
+        "style": "visual",
+        "question": "Are you good at making graphs, charts and other visual displays?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you like to have music playing while you are studying?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you need your teacher to explain diagrams, graphs, or maps?"
+    },
+    {
+        "style": "visual",
+        "question": "Can you understand or follow directions on a map?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you like any of the following: making things, arts and crafts. building things?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you like talking to others?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you remember things by picturing them in your head?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you use musical jingles to help you learn things? (For example: In 1942, Columbus sailed the ocean blue)"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you like to chew gum or eat while you are studying?"
+    },
+    {
+        "style": "visual",
+        "question": "Do you follow written instructions better than spoken instructions?"
+    },
+    {
+        "style": "auditory",
+        "question": "Do you like to tell jokes or stories to demonstrate a point?"
+    },
+    {
+        "style": "kinesthetic",
+        "question": "Do you prefer to do things yourself rather than reading or watching what someone else has done?"
+    },
+    {
+        "style": "visual",
+        "question": "When you listen to music, do you get the words to the song wrong?"
+    }
+]

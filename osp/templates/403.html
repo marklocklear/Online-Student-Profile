@@ -1,0 +1,25 @@
+{% extends base_template %}
+
+{% block header %}
+{{ block.super }}
+{% ifequal base_template "base.html" %}
+<div id="navigation">
+  <div id="navigation-left"></div>
+  <ul class="menu">
+    <li class="menu-item last">{% if user.is_authenticated %}<a href="{% url logout %}" class="menu-link">Sign Out</a>{% else %}<a href="{% url login %}" class="menu-link">Sign In</a>{% endif %}</li>
+  </ul>
+  <div id="navigation-right"></div>
+</div>
+{% endifequal %}
+{% endblock %}
+
+{% block styles %}
+{{ block.super }}
+{% ifequal base_template "base.html" %}
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/base_student.css" type="text/css" />
+{% endifequal %}
+{% endblock %}
+
+{% block body %}
+<p>You do not have access to the requested resource.</p>
+{% endblock %}

@@ -1,0 +1,503 @@
+/* Global Stylesheet */
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+input, select, textarea
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+a
+{
+    color: #017fbe;
+    font-weight: bold;
+}
+
+h1, h2
+{
+    margin: 15px 0;
+    padding: 5px 0;
+    font-weight: normal;
+    color: #546d9e;
+    white-space: nowrap;
+}
+
+table
+{
+    width: 100%;
+}
+.ui-dialog table
+{
+    width: 97%;
+}
+table th
+{
+    padding: 5px 10px;
+    background: #dfdfdf;
+    text-align: left;
+}
+table td
+{
+    padding: 5px 10px;
+}
+table tr.even
+{
+    background: #f1f1f1;
+}
+
+label
+{
+    display: block;
+    font-weight: bold;
+}
+
+.clear
+{
+    clear: both;
+}
+.clear-left
+{
+    clear: left;
+}
+.clear-right
+{
+    clear: right;
+}
+
+.errorlist
+{
+    color: #ff0000;
+}
+
+.inactive-link
+{
+    color: #777;
+    font-style: italic;
+}
+
+.field-error
+{
+    padding: 10px 15px;
+    background: #fcf0f0;
+    border: 1px solid #e2d0d0;
+}
+
+.error, .notification
+{
+    padding: 10px 15px;
+    font-size: 13px;
+}
+.error .ui-icon, .notification .ui-icon
+{
+    float: left;
+    margin-right: 10px;
+}
+
+#header
+{
+    z-index: 2;
+    height: 125px;
+    background: #fff url('../img/header_background.png') bottom repeat-x;
+}
+#header-inner
+{
+    margin: 0 auto;
+    width: 960px;
+}
+
+#name
+{
+    float: left;
+    margin: 80px 0 0 0;
+    font-size: 23px;
+}
+#name a
+{
+    color: #565656;
+    text-decoration: none;
+}
+
+#id_query
+{
+    float: right;
+    margin: 15px 0 0 0;
+    padding: 5px 5px 5px 35px;
+    background: url('../img/magnifying_glass_icon.png') 10px center no-repeat;
+    border: 1px solid #d6d6d6;
+    border-bottom: 1px solid #acacac;
+    border-left: 1px solid #cdcdcd;
+    font-size: 15px;
+    color: #9a9b9c;
+}
+
+ul.ui-autocomplete
+{
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #cdcdcd;
+    border-right: 1px solid #d6d6d6;
+    border-top: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+ul.ui-autocomplete li.ui-menu-item a
+{
+    display: block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    color: #333;
+    text-decoration: none;
+}
+ul.ui-autocomplete li.ui-menu-item a:hover, 
+ul.ui-autocomplete li.ui-menu-item a.ui-state-hover 
+{
+    background: #eee;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    color: #333;
+    text-shadow: none;
+}
+
+#navigation
+{
+    clear: right;
+    float: right;
+    margin-top: 30px;
+}
+#navigation div
+{
+    float: left;
+    width: 6px;
+    height: 39px;
+}
+#navigation-left
+{
+    background: url('../img/navigation_left_background.png') no-repeat;
+}
+#navigation-right
+{
+    background: url('../img/navigation_right_background.png') no-repeat;
+}
+#navigation ul.menu
+{
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 39px;
+}
+#navigation ul.menu li.menu-item
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    background: url('../img/navigation_background.png') repeat-x;
+}
+#navigation ul.menu li.menu-item.has-submenu
+{
+    position: relative;
+    top: 1px;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-bottom: none;
+}
+#navigation ul.menu li.menu-item.has-submenu a.menu-link
+{
+    padding: 10px 44px 14px 44px;
+    background: none;
+}
+#navigation ul.menu li.menu-item a.menu-link
+{
+    display: block;
+    padding: 12px 45px 13px 45px;
+    background: url('../img/navigation_divider.png') right 13px no-repeat;
+    color: #017fbe;
+    text-decoration: none;
+}
+#navigation ul.menu li.menu-item.has-submenu a.menu-link:hover
+{
+    text-decoration: none;
+}
+#navigation ul.menu li.menu-item a.menu-link:hover
+{
+    text-decoration: underline;
+}
+#navigation ul.menu li.menu-item.last a.menu-link
+{
+    background: none;
+}
+#navigation ul.menu li.menu-item ul.submenu
+{
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 36px;
+    right: -1px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#navigation ul.menu li.menu-item ul.submenu li.submenu-item
+{
+    margin: 0;
+    padding: 0;
+}
+#navigation ul.menu li.menu-item ul.submenu li.submenu-item a
+{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    text-decoration: none;
+}
+#navigation ul.menu li.menu-item ul.submenu li.submenu-item a:hover
+{
+    background: #eee;
+}
+#navigation ul.menu li.menu-item ul.submenu li.submenu-item em
+{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+#body
+{
+    z-index: 1;
+    margin: 50px auto;
+    width: 960px;
+}
+
+#footer
+{
+    margin: 0 auto;
+    width: 960px;
+}
+
+form.assessment ul, form.survey ul, #intervention-form ul
+{
+    list-style: none;
+    padding: 0;
+}
+form.assessment ul label, form.survey ul label
+{
+    font-weight: normal;
+}
+#intervention-form ul li label
+{
+    font-weight: normal;
+}
+.ui-dialog textarea, #contact-form input[type="text"]
+{
+    width: 500px;
+}
+
+div.field
+{
+    margin: 25px 0;
+}
+
+#survey-results, #learning-style
+{
+    float: left;
+    margin: 25px 0;
+    width: 459px;
+}
+#learning-style
+{
+    margin-right: 42px;
+}
+#survey-results ul
+{
+    margin: 10px 0;
+}
+
+.large-tile
+{
+    padding: 10px 25px;
+    width: 409px;
+    height: 226px;
+    background: url('../img/large_tile_background.png') no-repeat;
+}
+.large-tile p
+{
+    margin: 25px 0;
+}
+
+#personality-type
+{
+    list-style: none;
+    margin: 0 5px;
+    padding: 0;
+}
+#personality-type li
+{
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    height: 225px;
+    background: url('../img/small_tile_background.png') no-repeat;
+}
+#personality-type li.last
+{
+    margin-right: 0;
+}
+#personality-type li h4
+{
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+#personality-type .chart
+{
+    margin: 0 auto;
+    width: 175px;
+}
+
+.ui-widget
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#class-chart
+{
+    float: left;
+    width: 50%;
+}
+#chart-explanation
+{
+    float: left;
+    width: 50%;
+}
+
+h2.float-left
+{
+    float: left;
+}
+a.float-right
+{
+    float: right;
+    display: block;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+div.survey-answer
+{
+    padding: 5px 15px;
+}
+div.survey-answer.even
+{
+    background: #f1f1f1;
+}
+div.survey-answer p
+{
+    margin: 5px 0;
+}
+div.survey-answer p.question
+{
+    font-weight: bold;
+}
+
+dl#visit-details
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+dl#visit-details dt
+{
+    clear: both;
+    float: left;
+    margin: 0 0 5px;
+    padding: 0;
+    width: 24%;
+    font-weight: bold;
+}
+dl#visit-details dd
+{
+    float: left;
+    margin: 0 0 5px;
+    padding: 0;
+    width: 73%;
+}
+
+.small-text
+{
+    font-size: 13px;
+}
+div.campus-field 
+{
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 13px;
+    margin: 5px 0;
+}
+div.campus-field label
+{
+    font-weight: bold;
+    margin: 5px 0;
+}
+div.field
+{
+    font-size: 13px;
+}
+div.field label
+{
+    font-weight: bold;
+    margin: 5px 0;
+}
+div.field.checkbox label
+{
+    font-weight: normal;
+    display: inline;
+}
+
+#visit-paging
+{
+    margin: 10px 0;
+}

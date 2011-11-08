@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/base_employee.js"></script>
+{% endblock %}
+
+{% block header %}
+{{ block.super }}
+<form>
+  <input type="text" name="query" id="id_query" value="search for student" />
+</form>
+<div id="navigation">
+  <div id="navigation-left"></div>
+  <ul class="menu">
+    <li class="menu-item">
+      <a href="#" class="menu-link">Classes</a>
+      <ul class="submenu">
+        {% if classes %}
+        {% for class in classes %}
+        <li class="submenu-item"><a href="{% url roster:roster class.id %}">{{ class }}</a></li>
+        {% endfor %}
+        {% else %}
+        <li class="submenu-item"><em>you are not currently teaching any classes</em></li>
+        {% endif %}
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#" class="menu-link">Reports</a>
+      <ul class="submenu">
+        <li class="submenu-item"><a href="{% url report:personality-type-report %}">Personality Type</a></li>
+        <li class="submenu-item"><a href="{% url report:learning-styles-report %}">Learning Style</a></li>
+      </ul>
+    </li>
+    <li class="menu-item"><a href="{% url core:help %}" class="menu-link">Help</a></li>
+    <li class="menu-item last">{% if user.is_authenticated %}<a href="{% url logout %}" class="menu-link">Sign Out</a>{% else %}<a href="{% url login %}" class="menu-link">Sign In</a>{% endif %}</li>
+  </ul>
+  <div id="navigation-right"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends base_template %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/core.js"></script>
+{% endblock %}
+
+{% block body %}
+<h2>Help Topics</h2>
+<div id="procedures" class="accordion">
+  <h3><a href="#">View the list of classes that you are teaching</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>A list of the classes you are currently teaching will be listed under the ‘Classes’ menu.</p>
+  </div>
+  <h3><a href="#">View the distribution of learning styles across the students in a class</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>A list of the classes you are currently teaching will be listed under the ‘Classes’ menu.</p>
+    <p>Click on the desired class.</p>
+    <p>Information about the class will be displayed, with the distribution of learning styles at the top.</p>
+  </div>
+  <h3><a href="#">View a list of students in a class</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>A list of the classes you are currently teaching will be listed under the ‘Classes’ menu.</p>
+    <p>Click on the desired class.</p>
+    <p>Information about the class will be displayed, with the class roster starting near the top.</p>
+    <p>The class roster includes the students’ names, learning styles, and personality types.</p>
+  </div>
+  <h3><a href="#">Contact one or more students in a class by email</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>A list of the classes you are currently teaching will be listed under the ‘Classes’ menu.</p>
+    <p>Click on the desired class.</p>
+    <p>Information about the class will be displayed, including the class roster.  There will be a checkbox next to each student’s name.</p>
+    <p>Specify which students you want to send the email to by checking the checkboxes next to their names.</p>
+    <p>Look at the bottom of the page and click the ‘Contact’ button.</p>
+    <p>A form will be displayed containing subject and message fields.</p>
+    <p>In the ‘Subject’ field, enter the subject of the email (or modify the pre-filled in subject).</p>
+    <p>In the ‘Message’ field, enter the message text of the email (or modify the pre-filled in message).<p>
+    <p>When you are ready to send the email, click the ‘Submit’ button.</p>
+    <p>The emails will be sent to the selected students.</p>    
+  </div>
+  <h3><a href="#">Send an intervention notification on behalf of one or more students in a class</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>You will see a list of the classes you are currently teaching under the ‘Classes’ menu.</p>
+    <p>Click on the desired class.</p>
+    <p>Information about the class will be displayed, including the class roster.  There will be a checkbox next to each student’s name.</p>
+    <p>Specify which students you want to send an intervention for by checking the checkboxes next to their names.</p>
+    <p>Look at the bottom of the page and click the ‘Intervene’ button.</p>
+    <p>A form will be displayed containing a list of possible reasons for intervention, a campus drop-down, and subject and message fields.</p>
+    <p>Check the boxes next to the reasons that apply for this intervention notification.</p>
+    <p>Using the Campus drop-down, select the campus where this class is being held.</p>
+    <p>In the ‘Subject’ field, enter the subject of the intervention email notification (or modify the pre-filled in subject).</p>
+    <p>In the ‘Message’ field, enter the message text of the email (or modify the pre-filled in message).</p>
+    <p>When you are ready to send the intervention notification email, click the ‘Submit’ button.</p>
+    <p>The intervention notification email will be sent to the appropriate personnel.</p>
+  </div>
+  <h3><a href="#">View a student’s profile using search for student</a></h3>
+  <div>
+    <p>Search for a student profile by the first name, last name, or email address of the student</p>
+    <p>Look in the upper right hand corner of the page for the ‘search for student’ search box.</p>
+    <p>In the ‘search for student’ search box, type in two or more characters to search for the start of a student’s first name, last name, or email address.</p>
+    <p>A list of matching students will be displayed below the ‘search for student’ search box.</p>
+    <p>Click on the desired student.</p>
+    <p>The profile of that student will be displayed.</p>
+  </div>
+  <h3><a href="#">View a student’s profile using a class roster</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Classes’ menu.</p>
+    <p>A list of the classes you are currently teaching will be listed under the ‘Classes’ menu.</p>
+    <p>Click on the desired class.</p>
+    <p>Information about the class will be displayed, with the class roster starting near the top.</p>
+    <p>The class roster includes the students’ names, learning styles, and personality types.</p>
+    <p>Click on the name of the student whose profile you want to view.</p>
+    <p>The profile of that student will be displayed.</p>
+  </div>
+  <h3><a href="#">View a list of classes a student is currently taking</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>To see a list of the classes a student is taking, look at the top of the profile under ‘Current Enrollments’</p>
+  </div>
+  <h3><a href="#">View information on a student’s learning style</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>To see a summary graph of the student’s auditory, kinesthetic, and visual scores, look near the top of the profile under ‘Learning Style’</p>
+    <p>To see additional information about the student’s learning style, look to the right of ‘Learning Style’ and click the ‘view learning style details’ link</p>
+  </div>
+  <h3><a href="#">View information on surveys a student has taken</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>To see a list of surveys a student has taken, look near the top of the profile, to the right of ‘Learning Style’, and under ‘Survey Results’</p>
+    <p>You will see a list of dates of when surveys were taken, along with links to view the details for each survey taken.</p>
+    <p>To view the details of a specific survey’s results, click the ‘view details’ link to the right of the desired survey’s date.</p>
+  </div>
+  <h3><a href="#">View information on a student’s personality type</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>To see summary graphs of the student’s different personality type scores, look near the bottom of the profile under ‘Personality Type’</p>
+    <p>To see additional information about the student’s personality type, look to the right of ‘Personality Type’ and click the ‘view personality type details’ link</p>
+  </div>
+  <h3><a href="#">View a list of a student’s visits</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>To see a list of the visits recorded for that student, look at the bottom of the profile under ‘Visits’</p>
+  </div>
+  <h3><a href="#">Log a student visit</a></h3>
+  <div>
+    <p>View the student’s profile.</p>
+    <p>Look at the bottom of the profile to the right of ‘Visits’ and click the ‘log a visit’ link.</p>
+    <p>You will see a form containing the student’s name, and several form fields.</p>
+    <p>Fill in the form fields appropriately.</p>
+    <p>When you have completed filling out the visit information, click the Submit button to save the visit.</p>
+    The visit will be saved and you will then see the visit in the table on the student's profile.</p>
+  </div>
+  <h3><a href="#">View a list of available reports</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Reports’ menu.</p>
+    <p>A list of the types of reports you can run will be listed under the ‘Reports’ menu.</p>    
+  </div>
+  <h3><a href="#">Generate a report of Personality Type assessment results</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Reports’ menu.</p>
+    <p>A list of the types of reports you can run will be listed under the ‘Reports’ menu.</p>
+    <p>Click on ‘Personality Type’.</p>
+    <p>A form will be displayed containing fields for start and end dates.</p>
+    <p>Fill in the ‘Start Date’ and the ‘End Date’ to specify the range of dates during which Personality Type assessments were taken.</p>
+    <p>Click the ‘Submit’ button.</p>
+    <p>A report will be generated containing results of Personality Type assessments that were taken during the specified period.</p>
+    <p>From here you should be able to open or save the .xls report file.</p>
+  </div>
+  <h3><a href="#">Generate a report of Learning Style assessment results</a></h3>
+  <div>
+    <p>Look in the upper right hand corner of the page and hover over the ‘Reports’ menu.</p>
+    <p>A list of the types of reports you can run will be listed under the ‘Reports’ menu.</p>
+    <p>Click on ‘Learning Style’.</p>
+    <p>A form will be displayed containing fields for start and end dates.</p>
+    <p>Fill in the ‘Start Date’ and the ‘End Date’ to specify the range of dates during which Learning Style assessments were taken.</p>
+    <p>Click the ‘Submit’ button.</p>
+    <p>A report will be generated containing results of Learning Style assessments that were taken during the specified period.</p>
+    <p>From here you should be able to open or save the .xls report file.</p>    
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% if latest_learning_style_result %}
+<a href="javascript:;" class="modal float-right" ref="learning-style-window">view learning style details</a>
+<div class="clear"></div>
+<div class="large-tile">
+  <div id="learning-style-chart"></div>
+</div>
+{% else %}
+<div class="clear"></div>
+<p><em>Student has not completed the learning style assessment</em></p>
+{% endif %}
+<div id="learning-style-window"></div>

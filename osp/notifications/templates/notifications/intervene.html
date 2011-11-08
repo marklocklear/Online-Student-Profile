@@ -1,0 +1,26 @@
+{% if form.errors %}
+<p class="error">Your form submission contains errors. Please correct the highlighted fields.</p>
+{% endif %}
+<p style="font-weight: bold;">Students</p>
+<table>
+  <tbody>
+    {% for student in students %}
+    <tr class="{% cycle "odd" "even" %}">
+      <td>{{ student.get_full_name }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.profile.phone_number }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<form id="intervention-form" class="ui-form" action="{% url notification:intervene %}" method="POST">
+  {% csrf_token %}
+  {% for field in form %}
+  <div class="field{% if field.errors %} field-error{% endif %}">
+    {{ field.label_tag }}
+    {{ field }}
+  </div>
+  {% endfor %}
+  <input type="hidden" id="id_section_id" name="section_id" value="{{ section.id }}" />
+  <input type="hidden" id="id_students" name="students" value="{% for student in students %}{{student.id}}{% if not forloop.last %},{% endif %}{%endfor%}" />
+</form>

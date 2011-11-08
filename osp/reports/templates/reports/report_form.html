@@ -1,0 +1,26 @@
+{% extends base_template %}
+
+{% block scripts %}
+{{ block.super }}
+<script type="text/javascript" src="{{ MEDIA_URL }}js/report_form.js"></script>
+{% endblock %}
+
+{% block body %}
+{% if error %}
+<p class="error">No results found for the selected date range.</p>
+{% endif %}
+<p class="notification">Please select the range of dates that you would like for your report to include.</p>
+<h1>{% if learning %}Learning Styles{% else %}Personality Type{% endif %} Report</h1>
+<form action="{% if learning %}{% url report:learning-styles-report %}{% else %}{% url report:personality-type-report %}{% endif %}" method="POST" class="ui-form">
+  {% csrf_token %}
+  <div class="field">
+    <label for="id_from_date">Start Date</label>
+    <input type="text" name="from_date" id="id_from_date" />
+  </div>
+  <div class="field">
+    <label for="id_to_date">End Date</label>
+    <input type="text" name="to_date" id="id_to_date" />
+  </div>
+  <p><input type="submit" name="submit" value="Submit" /></p>
+</form>
+{% endblock %}

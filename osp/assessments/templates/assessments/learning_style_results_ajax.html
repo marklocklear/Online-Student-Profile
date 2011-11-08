@@ -1,0 +1,10 @@
+{% for description in descriptions %}
+<h1>{{ description.style }} Learner</h1>
+{{ description.description|safe }}
+<h2>Some Famous {{ description.style }} Learners</h2>
+<ul>
+{% for person in description.famous %}
+  <li>{{ person }}</li>
+{% endfor %}
+</ul>
+{% endfor %}

@@ -1,0 +1,26 @@
+{% if latest_personality_type_result %}
+<a href="javascript:;" class="modal float-right" ref="personality-type-window">view personality type details</a>
+<div class="clear"></div>
+<ul id="personality-type">
+  <li>
+    <h4>{{ latest_personality_type_result.personality_type.0 }}</h4>
+    <div id="personality-type-chart-1" class="chart"></div>
+  </li>
+  <li>
+    <h4>{{ latest_personality_type_result.personality_type.1 }}</h4>
+    <div id="personality-type-chart-2" class="chart"></div>
+  </li>
+  <li>
+    <h4>{{ latest_personality_type_result.personality_type.2 }}</h4>
+    <div id="personality-type-chart-3" class="chart"></div>
+  </li>
+  <li class="last">
+    <h4>{{ latest_personality_type_result.personality_type.3 }}</h4>
+    <div id="personality-type-chart-4" class="chart"></div>
+  </li>
+</ul>
+{% else %}
+<div class="clear"></div>
+<p><em>Student has not completed the personality type assessment</em></p>
+{% endif %}
+<div id="personality-type-window"></div>

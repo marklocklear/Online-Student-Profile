@@ -1,0 +1,32 @@
+[
+    {
+        "prefix": "ENG",
+        "number": "101",
+        "section": "01",
+        "instructors": ["0000001"],
+        "term": "su",
+        "year": 2011,
+        "title": "Introduction to the English Language",
+        "credit_hours": 3.0
+    },
+    {
+        "prefix": "MAT",
+        "number": "101",
+        "section": "01",
+        "instructors": ["0000002"],
+        "term": "su",
+        "year": 2011,
+        "title": "Introduction to Mathematics",
+        "credit_hours": 3.0
+    },
+    {
+        "prefix": "CIS",
+        "number": "101",
+        "section": "01",
+        "instructors": ["0000002", "0000003"],
+        "term": "su",
+        "year": 2011,
+        "title": "Introduction to Computers",
+        "credit_hours": 3.0
+    }
+]
