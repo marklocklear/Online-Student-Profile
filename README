@@ -1,4 +1,9 @@
-The Online Student Profile or OSP, is an early warning system designed to improve retention rates among high-risk students in higher education institutions. It was developed by Central Peidmont Community College. as part of a NGLC grant. The OSP is currently being used at 7 community colleges around the nation. You can read more about about it in this Chronicle of Higher Education. article. The OSP is Open Source Software. , and is freely available here.. If you need help installing, configuring, or hosting OSP, please send me a message here..
+The Online Student Profile or OSP, is an early warning system designed to improve retention rates among high-risk 
+students in higher education institutions. It was developed by Central Peidmont Community College. as part of a 
+NGLC grant. The OSP is currently being used at 7 community colleges around the nation. You can read more about 
+about it in this Chronicle of Higher Education. article. The OSP is Open Source Software.
+
+For more info go to http://marklocklear.heroku.com/osp
 
 Online Student Profile includes many different features for students, instructors, and counselors, including:
 
